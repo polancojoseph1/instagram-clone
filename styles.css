@@ -1,0 +1,105 @@
+:root {
+    --ig-bgcolor: #fafafa;
+    --ig-white: #ffffff;
+}
+
+body {
+    background: var(--ig-bgcolor);
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+header {
+    background: var(--ig-white);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.header__menu-tabs {
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+}
+
+.header__menu-tabs .instagram {
+    margin-top: 7px;
+    height: 30px;
+    align-self: center;
+    object-fit: contain;
+    width: 34%;
+    cursor: pointer;
+}
+
+.header__menu-tabs .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu-tabs .search-content input {
+    background: var(--ig-bgcolor);
+    width: 170px;
+    height: 80%;
+    border: 1px solid #dcdbdb;
+    border-radius: 3px;
+}
+
+.header__menu-tabs .search-content .fas {
+    color: #cdcdce;
+    position: relative;
+    right: -20px;
+    top: 7px;
+    font-size: 11px;
+}
+
+.header__menu-tabs .search-content input[type="text"] {
+    padding: 3px;
+    padding-left: 25px;
+    align-self: center;
+    height: 20px;
+    padding-bottom: -10px;
+    margin-bottom: -3px;
+    font-size: 15px;
+    font-weight: 10;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #cccccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #cccccc;
+}
+
+::placeholder { /* Other */
+    color: #cccccc;
+}
+
+.header__menu-tabs .search-content input[type="text"]:focus {
+    outline: none;
+}
+
+.header__menu-tabs-options {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__menu-tabs-options i {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.header__menu-tabs-options img {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    align-self: center;
+    cursor: pointer;
+}
