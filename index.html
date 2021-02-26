@@ -6,30 +6,199 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1">
     <title>Instagram Clone</title>
+    <link rel="icon" href="/images/instagram-icon.png">
     <link rel="stylesheet" href="font5/all.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <section class="header__menu-tabs">
-            <div class="header__menu-tabs instagram">
-                <img src="/images/instagram-cursive.png" class="instagram-cursive">
-            </div>
-            <div class="header__menu-tabs search">
-                <div class="header__menu-tabs search-content">
-                    <i class="fas fa-search"></i>
-                    <input type="text" class="instagram-search" placeholder="Search">
+        <div class="header-space">
+            <div class="header__menu-tabs">
+                <div class="header__menu-tabs instagram">
+                    <img src="/images/instagram-cursive.png" class="instagram-cursive">
+                </div>
+                <div class="header__menu-tabs search">
+                    <div class="header__menu-tabs search-content">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="instagram-search" placeholder="Search">
+                    </div>
+                </div>
+                <div class="header__menu-tabs-options">
+                    <i class="fas fa-home"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                    <i class="fas fa-compass"></i>
+                    <i class="far fa-heart"></i>
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg" class="header__user-img">
                 </div>
             </div>
-            <div class="header__menu-tabs-options">
-                <i class="fas fa-home"></i>
-                <i class="fab fa-facebook-messenger"></i>
-                <i class="fas fa-compass"></i>
-                <i class="far fa-heart"></i>
-                <img src="https://randomuser.me/api/portraits/men/44.jpg" class="header__user-img">
-            </div>
-        </section>
+        </div>
     </header>
+    <section class="feed-and-suggestions">
+        <div class="feed">
+            <div class="feed__stories">
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/men/24.jpg" class="header__user-img">
+                    </div>
+                    <span> quietjay </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/women/24.jpg" class="header__user-img">
+                    </div>
+                    <span> chorusrac... </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/men/25.jpg" class="header__user-img">
+                    </div>
+                    <span> johncalm </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/men/34.jpg" class="header__user-img">
+                    </div>
+                    <span> zeonore </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/women/34.jpg" class="header__user-img">
+                    </div>
+                    <span> samantha... </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/women/25.jpg" class="header__user-img">
+                    </div>
+                    <span> rebeccaq... </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/men/26.jpg" class="header__user-img">
+                    </div>
+                    <span> aaronaja... </span>
+                </div>
+                <div class="feed__stories-container">
+                    <div class="feed__stories-item">
+                        <img src="https://randomuser.me/api/portraits/women/26.jpg" class="header__user-img">
+                    </div>
+                    <span> ninesan... </span>
+                </div>
+            </div>
+            <div class="feed__post">
+                <div class="feed__post-top">
+                    <div class="feed__post-topleft">
+                        <img src="https://randomuser.me/api/portraits/women/76.jpg" class="feed__post-topleft-img">
+                        <span class="feed__post-topleft-name">
+                            samdiagram
+                        </span>
+                    </div>
+                    <div class="feed__post-topright">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="feed__post-middle">
+                    <img src="https://cdn2.hubspot.net/hubfs/3798961/surviving-plane-travel-kids.jpg">
+                </div>
+                <div class="feed__post-bottom">
+                    <div class="feed__post-bottom-tabs">
+                        <div class="feed__post-bottom-options">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="feed__post-bottom-bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="feed__post-bottom-likes">
+                        Liked by 
+                        <span id="username">richardrivera</span> 
+                        and 
+                        <span>others</span>
+                    </div>
+                    <div class="feed__post-bottom-description">
+                        <span id="username">samdiagram</span> Looking forward to new beginnings
+                        in Portugal<span>...</span> <span>more</span>
+                    </div>
+                    <div class="feed__post-bottom-comments-section">
+                        <span>View all 118 comments</span>
+                        <div class="feed__post-bottom-comment-flex">
+                            <div class="feed__post-bottom-comment">
+                                <span class="feed__post-bottom-user" id="username">
+                                    dcarson33
+                                </span>
+                                <span class="feed__post-bottom-user__comment">
+                                    Tell them I said hi and beautiful picture! 😍
+                                </span>
+                            </div>
+                            <div class="like-comment">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="feed__post-bottom-comment-flex">
+                            <div class="feed__post-bottom-comment">
+                                <span class="feed__post-bottom-user" id="username">
+                                    soph_iadamian
+                                </span>
+                                <span class="feed__post-bottom-user__comment">
+                                    When I lost my job, I thought I’ve lost it all with a little cash of £3,500 I got £38,700 with...
+                                    <span class="feed__post-bottom-user__comment-more">more</span>
+                                </span>
+                            </div>
+                            <div class="like-comment">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="feed__post-bottom-comment-hours">
+                            <span>4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="hline"></div>
+                    <div class="feed__post-bottom-write">
+                        <div class="smile-section">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div class="write-comment">
+                            <textarea type="text" placeholder="Write a comment..." autocomplete="off" autocorrect="off" style="height: 22px !important;"></textarea>
+                        </div>
+                        <div class="submit-comment">
+                            <span>Post</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="suggestions">
+            <div class="suggestions-area">
+                <div class="suggestions-area-self-area">
+                    <div class="suggestions-area-self">
+                        <div class="suggestions-area-self-image-area">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg">
+                        </div>
+                        <div class="suggestions-area-self-namearea">
+                            <span class="self-username">johndoe</span>
+                            <span class="self-description-name">John Doe</span>
+                        </div>
+                    </div>
+                    <div class="suggestions-area-self-namearea-switch">
+                        <span> Switch </span>
+                    </div>
+                </div>
+                <div class="suggestions-area-title">
+                    <div class="suggestions-area-title__left">
+                        Suggestions For You
+                    </div>
+                    <div class="suggestions-area-title__right">
+                        See All
+                    </div>
+                </div>
+                <div class="suggestions-area-feed">
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
